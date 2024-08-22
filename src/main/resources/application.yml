@@ -11,12 +11,12 @@ eureka:
 spring:
   application:
     name: gateway-service
-  cloud:
-    gateway:
-      mvc:
-        routes:
-          - id: user-service
-            uri: http://localhost:8081/
-            predicates:
-              - Path=/api/v1/user/**
+#  cloud:
+#    gateway:
+#      mvc:
+#        routes:
+#          - id: user-service
+#            uri: http://localhost:8081/
+#            predicates:
+#              - Path=/api/v1/user/**
 
