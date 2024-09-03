@@ -27,4 +27,9 @@ spring:
           filters:
 #            - AddRequestHeader=user-request, user-service-request-header1
 #            - AddResponseHeader=user-response, user-service-response-header1
-            - CustomFilter
+            - name: CustomFilter
+            - name: LoggingFilter
+              args:
+                baseMessage: Hi, LoggingFilter
+                preLogger: true
+                postLogger: true
