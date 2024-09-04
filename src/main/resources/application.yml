@@ -21,7 +21,7 @@ spring:
             postLogger: true
       routes:
         - id: user-service
-          uri: http://localhost:8081/
+          uri: lb://USER-SERVICE
           predicates:
             - Path=/api/v1/user/**
           filters:
