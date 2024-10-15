@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 //@Configuration
 public class FilterConfig {
 
-  //  @Bean
+//    @Bean
     public RouteLocator gatewayRoutes(RouteLocatorBuilder routeLocatorBuilder) {
         return routeLocatorBuilder.routes()
                 .route(r -> r.path("/api/v1/user/**") //r 이라는 값이 전달되면 패스확인하고
